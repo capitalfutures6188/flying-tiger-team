@@ -12,9 +12,18 @@
         <a href="#" class="btn btn-ghost text-lg">聯繫專人諮詢</a>
       </div>
     </div>
-    <div>
-      <img src="images/hero.jpg" alt="飛虎團隊形象" class="rounded-2xl border" style="border-color:#e2e8f0" loading="eager" fetchpriority="high" onerror="this.src='images/placeholder-hero.jpg'">
+    <!-- 修改開始：將 img 替換為 YouTube iframe -->
+    <div class="aspect-video rounded-2xl overflow-hidden border shadow-lg" style="border-color:#e2e8f0">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/yI5Mlw9Nyf4" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
+    <!-- 修改結束 -->
   </div>
 
   <!-- 三功能框 -->
@@ -62,3 +71,4 @@
     </div>
   </div>
 </section>
+
