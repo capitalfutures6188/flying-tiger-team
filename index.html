@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>群益期貨飛虎團隊｜Omnichannel Division</title>
+  <title>Omnichannel Division</title>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -71,11 +71,7 @@
       <div class="flex items-center justify-between h-16">
         <a href="/" data-route="home" class="flex items-center gap-3">
           <!-- 圖檔保留原本路徑 -->
-          <img src="images/logo.png" alt="飛虎團隊 Logo" class="h-10 w-10 rounded" onerror="this.src='images/placeholder-logo.png'">
-          <div>
-            <span class="text-base font-bold text-brand block">群益期貨 飛虎團隊</span>
-            <span class="text-xs text-slate-500 block">Flying Tiger Team</span>
-          </div>
+          <img src="images/logo.png" alt="Logo" class="h-10 w-10 rounded" onerror="this.src='images/placeholder-logo.png'">
         </a>
 
         <nav class="hidden md:block header-nav">
@@ -91,12 +87,7 @@
           </div>
         </nav>
 
-        <div class="hidden md:flex items-center gap-3">
-          <a href="#" class="btn btn-primary">立即開戶</a>
-          <a href="#" class="btn btn-ghost">
-            <i data-feather="message-circle" class="h-4 w-4 mr-2"></i> LINE專人
-          </a>
-        </div>
+        <!-- 這邊的按鈕已經被移除 -->
 
         <button id="mobile-menu-button" class="md:hidden rounded p-2 text-slate-600 hover:text-black hover:bg-slate-100">
           <i data-feather="menu"></i><span class="sr-only">Open menu</span>
@@ -115,10 +106,7 @@
         <a href="/domestic-info" data-route="domestic-info" class="py-2">國內期貨資訊</a>
         <a href="/foreign-info" data-route="foreign-info" class="py-2">國外期貨資訊</a>
         <a href="/faq" data-route="faq" class="py-2">FAQ</a>
-        <div class="flex items-center gap-3 py-3">
-          <a href="#" class="w-full text-center btn btn-primary">立即開戶</a>
-          <a href="#" class="w-full text-center btn btn-ghost"><i data-feather="message-circle" class="h-4 w-4 mr-2"></i>LINE 專人</a>
-        </div>
+        <!-- 手機版的按鈕也已經被移除 -->
       </div>
     </div>
   </header>
@@ -138,9 +126,25 @@
         <p>公司電話：(02)2700-2888</p>
         <p>許可字號：114年金管期總字第006號</p>
       </div>
-      <p class="text-slate-400">&copy; 2025 群益期貨飛虎團隊. All rights reserved.</p>
+      <p class="text-slate-400">&copy; 2025. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- 服務說明 Modal（白底） -->
+  <div id="services-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card p-6 relative">
+      <button id="services-close" class="absolute top-3 right-3 rounded p-2 hover:bg-slate-100" aria-label="關閉">
+        <i data-feather="x"></i>
+      </button>
+      <div id="services-modal-body" class="space-y-3"></div>
+    </div>
+  </div>
+
+  <!-- 前端路由器 -->
+  <script type="module" src="assets/js/router.js"></script>
+</body>
+</html>
+
 
   <!-- 服務說明 Modal（白底） -->
   <div id="services-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
