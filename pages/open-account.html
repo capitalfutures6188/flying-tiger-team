@@ -1,3 +1,10 @@
+<style>
+  .btn-android{background:linear-gradient(90deg,#f97316,#ef4444);color:#fff}
+  .btn-ios{background:linear-gradient(90deg,#2563eb,#0ea5e9);color:#fff}
+  .cta-green{background:linear-gradient(90deg,#16a34a,#22c55e);color:#fff}
+  .cta-blue{background:linear-gradient(90deg,#0ea5e9,#2563eb);color:#fff}
+  .cta-red{background:linear-gradient(90deg,#ef4444,#f97316);color:#fff}
+</style>
 <section class="space-y-14">
   <h1 class="text-4xl font-bold text-center text-brand">開戶方法</h1>
 
@@ -32,10 +39,59 @@
 
     <div id="tab-panels">
       <div id="tab-mobile" class="tab-content active">
-        <h3 class="text-xl font-bold text-center mb-6 text-brand">最推薦！在家就能完成</h3>
-        <div class="max-w-2xl mx-auto">
-          <div class="timeline">
-            <div class="timeline-item"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><h4 class="font-bold">下載 App</h4><p class="text-slate-600">下載「群益線上開戶」App。</p></div>
+  <h3 class="text-xl font-bold text-center mb-6 text-brand">手機 APP 線上開戶</h3>
+
+  <!-- 下載按鈕 -->
+  <div class="max-w-3xl mx-auto mb-8">
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://play.google.com/store/apps/details?id=com.capital.capitalmobiwizard"
+         target="_blank" rel="noopener"
+         class="w-full sm:w-auto btn-android font-semibold rounded-xl px-6 py-4 shadow-md text-center">
+        下載 Android 版「群益 e櫃台」APP
+      </a>
+      <a href="https://apps.apple.com/tw/app/%E7%BE%A4%E7%9B%8Ae%E6%AB%83%E5%8F%B0/id1069752783?l=zh"
+         target="_blank" rel="noopener"
+         class="w-full sm:w-auto btn-ios font-semibold rounded-xl px-6 py-4 shadow-md text-center">
+        下載 iPhone 版「群益 e櫃台」APP
+      </a>
+    </div>
+    <p class="text-center text-slate-500 mt-3 text-sm">
+      請準備身分證、第二證件與存摺封面，在光線充足處拍攝，清晰可辨識。
+    </p>
+  </div>
+
+  <!-- 9 步驟圖片（從 /images/ 資料夾載入） -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <figure class="rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+      <img src="/images/open-account-steps-1.png" alt="期貨線上開戶 9 步驟（圖一）"
+           class="w-full h-auto object-contain" loading="lazy">
+    </figure>
+    <figure class="rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+      <img src="/images/open-account-steps-2.png" alt="期貨線上開戶 9 步驟（圖二）"
+           class="w-full h-auto object-contain" loading="lazy">
+    </figure>
+    <figure class="rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+      <img src="/images/open-account-steps-3.png" alt="期貨線上開戶 9 步驟（圖三）"
+           class="w-full h-auto object-contain" loading="lazy">
+    </figure>
+  </div>
+
+  <!-- 底部 CTA 連結 -->
+  <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+    <a href="#top"
+       class="cta-red font-semibold rounded-xl px-6 py-4 shadow-md text-center w-full sm:w-auto">
+      立即線上開戶
+    </a>
+    <a href="tel:+886-2-0000-0000"
+       class="cta-blue font-semibold rounded-xl px-6 py-4 shadow-md text-center w-full sm:w-auto">
+      馬上來電
+    </a>
+    <a href="https://line.me/R/ti/p/@a6024" target="_blank" rel="noopener"
+       class="cta-green font-semibold rounded-xl px-6 py-4 shadow-md text-center w-full sm:w-auto">
+      加 LINE 好友諮詢（@a6024）
+    </a>
+  </div>
+</div></div><h4 class="font-bold">下載 App</h4><p class="text-slate-600">下載「群益線上開戶」App。</p></div>
             <div class="timeline-item"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><h4 class="font-bold">選擇線上開戶</h4><p class="text-slate-600">開啟 App 並選擇「線上開戶」。</p></div>
             <div class="timeline-item"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><h4 class="font-bold">上傳證件/存摺</h4><p class="text-slate-600">依指示拍攝並上傳雙證件與存摺封面。</p></div>
             <div class="timeline-item"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><h4 class="font-bold">填寫資料</h4><p class="text-slate-600">填寫住址、資產與交易經驗等。</p></div>
